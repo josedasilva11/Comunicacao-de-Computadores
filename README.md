@@ -8,14 +8,21 @@ Garantir que todos os dados enviados cheguem ao destinatário sem erros e na ord
 
 ***Técnicas:***
 
-- ***Retransmissão:*** Se não houver confirmação de recebimento (ACK) dentro de um tempo esperado, os dados são retransmitidos.
-- ***Confirmações (ACKs) e Temporizadores:*** O receptor envia ACKs para confirmar a recepção de pacotes. Temporizadores são usados para detectar perdas de pacotes.
-- ***Controle de Erros:***Além das retransmissões, usa-se verificação de erros como checksum para garantir a integridade dos dados.
+- ***Retransmissão:***
+- Se não houver confirmação de recebimento (ACK) dentro de um tempo esperado, os dados são retransmitidos.
+- ***Confirmações (ACKs) e Temporizadores:***
+- O receptor envia ACKs para confirmar a recepção de pacotes. Temporizadores são usados para detectar perdas de pacotes.
+- ***Controle de Erros:***
+- Além das retransmissões, usa-se verificação de erros como checksum para garantir a integridade dos dados.
 
 ## 2. Controlo de Fluxo
 
-Objetivo: Evitar que o emissor sobrecarregue o receptor com dados.
-Mecanismo de Janela Deslizante: O receptor especifica a quantidade de dados que está pronto para receber (janela de recepção). O emissor pode enviar apenas a quantidade de dados indicada pela janela.
+ ***Objetivo:***
+ 
+ Evitar que o emissor sobrecarregue o receptor com dados.
+ 
+***Mecanismo de Janela Deslizante:*** 
+O receptor especifica a quantidade de dados que está pronto para receber (janela de recepção). O emissor pode enviar apenas a quantidade de dados indicada pela janela.
 
 ## 3. Controlo de Congestão
 
