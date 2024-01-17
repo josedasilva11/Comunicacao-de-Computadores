@@ -207,13 +207,13 @@ Quando um pacote é perdido (detectado por timeout ou ACKs duplicados), o TCP re
 K_B(K_B^{-1}(m)) = m
 ```
 
-- ***Autenticação e Confidencialidade: Uso das chaves pública e privada
-- ***Assinatura Digital: Associação do assinante ao documento, garantindo integridade e não repúdio
+- ***Autenticação e Confidencialidade::*** Uso das chaves pública e privada
+- ***Assinatura Digital::*** Associação do assinante ao documento, garantindo integridade e não repúdio
 
 ## Infraestrutura de Chaves Públicas (PKI)
 
-- ***Autoridade de Certificação (CA): Associa chave pública a uma entidade
-- ***Certificado Digital: Vincula chave pública a uma identidade verificável
+- ***Autoridade de Certificação (CA)::*** Associa chave pública a uma entidade
+- ***Certificado Digital::*** Vincula chave pública a uma identidade verificável
 
 ## TLS (Transport Layer Security)
 
