@@ -203,9 +203,7 @@ Quando um pacote é perdido (detectado por timeout ou ACKs duplicados), o TCP re
 
 - ***RSA:*** Algoritmo popular com propriedade
   
-```LaTeX
-K_B(K_B^{-1}(m)) = m
-```
+![Equação RSA](https://postimg.cc/dk5Q30ww)
 
 - ***Autenticação e Confidencialidade::*** Uso das chaves pública e privada
 - ***Assinatura Digital::*** Associação do assinante ao documento, garantindo integridade e não repúdio
