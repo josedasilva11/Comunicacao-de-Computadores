@@ -151,13 +151,13 @@ Quando um pacote é perdido (detectado por timeout ou ACKs duplicados), o TCP re
   
 ## Segurança no DNS
 
-- ***Vulnerabilidades incluem ataques DDoS, redirecionamentos e DNS poisoning.
-- ***Mecanismos de segurança como DNSSEC para aumentar a confiabilidade.
+- Vulnerabilidades incluem ataques DDoS, redirecionamentos e DNS poisoning.
+- Mecanismos de segurança como DNSSEC para aumentar a confiabilidade.
   
 ## Ferramentas de Cliente DNS
 
 - Utilitários como host, nslookup e dig para consultas diretas ao DNS.
-- 
+  
 ## Recordes de Recursos DNS
 
 - Diversos tipos como A, NS, CNAME, MX, SOA, etc.
@@ -171,3 +171,92 @@ Quando um pacote é perdido (detectado por timeout ou ACKs duplicados), o TCP re
 ## Programação e Integração com DNS
 
 - Utilização de APIs e bibliotecas em linguagens de programação como Java e C para realizar consultas DNS.
+
+
+# Módulo Segurança de Redes
+
+## Tipos de Ataques
+
+- ***Espionagem:*** Interceção indevida de mensagens
+- ***Inserção de Mensagens:*** Comunicação fraudulenta
+- ***Disfarce (Spoofing):*** Fingir ser outro usuário
+- ***Desvio de Sessões (Hijacking):*** Tomar controle de conexões ativas
+- ***Negação de Serviço (DoS):*** Impedir acesso legítimo a serviços
+
+## Propriedades de Comunicação Segura
+
+- ***Confidencialidade:*** Mensagens compreensíveis apenas pelo emissor/receptor
+- ***Autenticação:*** Confirmação mútua de identidades
+- ***Integridade da Mensagem:*** Mensagem não alterada durante a transmissão
+- ***Não Repúdio:*** Impedir negação de participação em comunicação
+- ***Acesso e Disponibilidade:*** Serviços acessíveis e operacionais para usuários autorizados
+
+
+## Criptografia
+
+- ***Chave Simétrica:*** Mesma chave para cifragem e decifragem
+- ***Chave Pública:*** Chave para cifrar é pública, para decifrar é privada
+- ***Chave Simétrica:*** Inclui cifra de substituição e criptografia de bloco (DES, 3-DES, AES)
+- ***Ataques a Chave Simétrica:*** Baseados em texto cifrado, texto conhecido e texto escolhido
+
+## Criptografia de Chave Pública
+
+- ***RSA:*** Algoritmo popular com propriedade
+  
+```latex
+K_B(K_B^{-1}(m)) = m
+```
+
+- ***Autenticação e Confidencialidade: Uso das chaves pública e privada
+- ***Assinatura Digital: Associação do assinante ao documento, garantindo integridade e não repúdio
+
+## Infraestrutura de Chaves Públicas (PKI)
+
+- ***Autoridade de Certificação (CA): Associa chave pública a uma entidade
+- ***Certificado Digital: Vincula chave pública a uma identidade verificável
+
+## TLS (Transport Layer Security)
+
+- ***Evolução do SSL:*** Protocolo para segurança em comunicações de rede
+- ***TLS 1.3 (2020):*** Melhorias na segurança e desempenho, redução do handshake
+- ***Aplicação:*** Utilizado em diversas aplicações sobre TCP para autenticação, confidencialidade e integridade
+
+
+# Módulo Encaminhamento
+
+## Conceitos Fundamentais
+
+- ***Forwarding:*** Processo de mover pacotes de uma entrada para a saída apropriada em um roteador.
+- ***Routing:*** Determinação de rotas para o encaminhamento dos pacotes pela rede.
+
+## Algoritmos de Encaminhamento Dinâmico
+
+- ***Estado de Ligação (Link State - LS):*** Todos os roteadores têm conhecimento completo da topologia e custos de ligação.
+- ***Vetores de Distância (Distance Vector - DV):*** Roteadores conhecem apenas vizinhos diretos e custos associados.
+- ***Comparação entre DV e LS:*** LS é mais robusto e rápido na convergência, mas mais exigente em recursos; DV é mais simples, mas tem problemas de convergência lenta e loops.
+
+## Protocolos de Encaminhamento IP
+
+- ***Protocolos Internos (IGP):*** Usados dentro de um Sistema Autónomo (AS), como RIP, OSPF, EIGRP.
+- ***Protocolos Externos (EGP):*** Usados para encaminhamento entre diferentes AS, principalmente BGP.
+
+## Encaminhamento IP em Detalhe
+
+- ***Roteadores e Interfaces:*** Roteadores armazenam e reenviam datagramas IP, tratando diferentes tipos de interfaces de rede.
+- ***Tabelas de Encaminhamento:*** Usadas para determinar o próximo salto e interface de saída para cada destino.
+- ***Plano de Controlo e Plano de Dados:*** Separação entre a lógica de encaminhamento (controlo) e a movimentação de dados (dados).
+
+## Algoritmos de Encaminhamento
+
+- ***Link State (LS):*** Utiliza o algoritmo de Dijkstra para calcular rotas de custo mínimo. Exige conhecimento global da rede.
+- ***Distance Vector (DV):*** Utiliza o algoritmo de Bellman-Ford. Baseia-se em informação local e é iterativo e assíncrono.
+
+## Problemas e Soluções nos Algoritmos DV
+
+- ***Problemas:*** Convergência lenta e possibilidade de loops.
+- ***Soluções:*** Divisão do horizonte e envenenamento do percurso inverso para evitar loops.
+
+## Encaminhamento na Internet
+
+- ***Sistemas Autónomos (AS):*** Agrupamento de roteadores sob a mesma administração.
+- ***IGP vs EGP:*** IGP foca no desempenho interno, enquanto EGP lida com políticas e relações entre diferentes AS.
