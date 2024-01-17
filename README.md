@@ -123,32 +123,51 @@ Quando um pacote é perdido (detectado por timeout ou ACKs duplicados), o TCP re
 # Módulo DNS
 
 ## Conceitos Fundamentais do DNS
+
 - ***Função:*** Traduzir nomes de domínio legíveis por humanos (como www.google.com) em endereços IP.
 - ***Características:*** É uma base de dados distribuída e hierárquica, com um protocolo de camada de aplicação.
+  
 ## Por que não Centralizar o DNS?
+
 - Problemas de centralização incluem ponto único de falha, volume de tráfego elevado, distância da base de dados centralizada e dificuldades de manutenção.
+  
 ## Serviços DNS
+
 - Tradução de nomes de hosts para endereços IP.
 - Aliases de hosts e definição de servidores de e-mail.
 - Distribuição de carga entre servidores Web replicados.
+  
 ## Hierarquia do DNS
+
 - ***Servidores Root DNS:*** Pontos de partida para as consultas DNS.
 - ***TLD (Top-Level Domain) Servers:*** Responsáveis por domínios de topo (.com, .org, .pt, etc.).
 - ***Servidores DNS Autoritativos:*** Mantêm informação precisa sobre domínios específicos.
+  
 ## Operação do DNS
+
 - ***Modos Iterativo e Recursivo:*** Diferentes métodos para resolver nomes.
 - Uso do UDP para eficiência.
 - Caching para reduzir a carga nos servidores.
+  
 ## Segurança no DNS
+
 - ***Vulnerabilidades incluem ataques DDoS, redirecionamentos e DNS poisoning.
 - ***Mecanismos de segurança como DNSSEC para aumentar a confiabilidade.
+  
 ## Ferramentas de Cliente DNS
+
 - Utilitários como host, nslookup e dig para consultas diretas ao DNS.
+- 
 ## Recordes de Recursos DNS
+
 - Diversos tipos como A, NS, CNAME, MX, SOA, etc.
 - Armazenam informações específicas sobre domínios e seus serviços associados.
+  
 ## Implementação e Gestão de Domínios
+
 - Processos para configurar e gerir domínios e seus respectivos servidores DNS.
 - Exemplos de configurações de domínio e registros DNS.
+  
 ## Programação e Integração com DNS
+
 - Utilização de APIs e bibliotecas em linguagens de programação como Java e C para realizar consultas DNS.
