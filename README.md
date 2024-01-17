@@ -79,3 +79,43 @@ Quando um pacote é perdido (detectado por timeout ou ACKs duplicados), o TCP re
 
 - ***Controle de Fluxo:*** Ajusta dinamicamente o tamanho da janela de recepção com base na capacidade do receptor.
 - ***Controle de Congestão:*** Adapta o tamanho da janela de transmissão com base na percepção da congestão da rede, evitando assim a perda de pacotes.
+
+# Módulo HTTP (Hypertext Transfer Protocol)
+
+
+## Conceitos Básicos
+
+- ***Páginas Web:*** Consistem em objetos dentro de um ficheiro base HTML, que podem incluir referências a outros objetos ou páginas.
+- ***Objetos:*** Incluem ficheiros HTML, imagens JPEG, applets Java, ficheiros áudio, etc.
+- ***URLs:*** Cada objeto é identificado por um Uniform Resource Locator.
+
+## Funcionamento do HTTP
+
+- ***Protocolo de Nível de Aplicação:*** Modelo cliente/servidor onde o cliente (browser) solicita e recebe objetos Web, e o servidor envia objetos em resposta.
+- ***Versões do HTTP:*** Variações incluem HTTP 0.9, 1.0, 1.1, 2, e 3.
+- ***Estado:*** Protocolo sem estado, não mantendo informação sobre pedidos anteriores.
+
+## Mensagens HTTP
+
+- ***Pedido HTTP:*** Inclui uma linha de pedido, linhas de cabeçalho e, ocasionalmente, um corpo.
+- ***Resposta HTTP:*** Semelhante ao pedido, com uma linha de status e cabeçalhos.
+- ***Métodos HTTP:*** GET, POST, HEAD, PUT, DELETE, etc., cada um com propósitos específicos (ex: GET para solicitar recursos, POST para enviar dados).
+
+## HTTP e TCP
+
+- ***Uso do TCP:*** HTTP utiliza TCP para conexão (padrão na porta 80).
+- ***HTTP Não Persistente vs. Persistente:*** Varia entre uma única transação por conexão (HTTP/1.0) e múltiplas transações (HTTP/1.1 e superior).
+
+## HTTP/2 e HTTP/3
+
+- ***Melhorias no Desempenho:*** HTTP/2 introduz multiplexação, compressão de cabeçalho e push do servidor.
+- ***QUIC e HTTP/3:*** Transição de alguns elementos para QUIC (baseado em UDP) para melhorar o desempenho e a segurança.
+
+## Cookies e Estado
+
+- ***Cookies:*** Mecanismo para manter estado e informações entre as transações HTTP.
+
+## Proxy e Cache
+
+- ***Servidores Proxy:*** Usados para cache e otimização de requisições e respostas HTTP.
+- ***Melhoria de Desempenho:*** Reduzem tempo de resposta e tráfego na rede.
