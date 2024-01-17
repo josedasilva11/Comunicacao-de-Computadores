@@ -203,7 +203,7 @@ Quando um pacote é perdido (detectado por timeout ou ACKs duplicados), o TCP re
 
 - ***RSA:*** Algoritmo popular com propriedade
   
-![Equação RSA]([https://postimg.cc/dk5Q30ww](https://i.postimg.cc/hvBXCJYz/Code-Cogs-Eqn.gif))
+![Equação RSA]([[https://postimg.cc/dk5Q30ww](https://i.postimg.cc/hvBXCJYz/Code-Cogs-Eqn.gif)](https://latex.codecogs.com/svg.image?&space;K_B(K_B^{-1}(m))=m&space;))
 
 - ***Autenticação e Confidencialidade::*** Uso das chaves pública e privada
 - ***Assinatura Digital::*** Associação do assinante ao documento, garantindo integridade e não repúdio
