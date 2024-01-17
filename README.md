@@ -2,6 +2,56 @@ Material de Apoio à UC de Comunicação de Computadores da Universidade do Minh
 
 # Sumário
 
+- [Módulo Transporte](#módulo-transporte)
+  - [Transferência Confiável de Dados](#transferência-confiável-de-dados)
+  - [Controlo de Fluxo](#controlo-de-fluxo)
+  - [Controlo de Congestão](#controlo-de-congestão)
+  - [UDP (User Datagram Protocol)](#udp-user-datagram-protocol)
+  - [TCP (Transmission Control Protocol)](#tcp-transmission-control-protocol)
+  - [Multiplexagem e Desmultiplexagem](#multiplexagem-e-desmultiplexagem)
+  - [Estabelecimento e Término de Conexões TCP](#estabelecimento-e-término-de-conexões-tcp)
+  - [Controle de Erros e Retransmissão no TCP](#controle-de-erros-e-retransmissão-no-tcp)
+  - [Operações Específicas do TCP](#operações-específicas-do-tcp)
+
+- [Módulo HTTP](#módulo-http-hypertext-transfer-protocol)
+  - [Conceitos Básicos](#conceitos-básicos)
+  - [Funcionamento do HTTP](#funcionamento-do-http)
+  - [Mensagens HTTP](#mensagens-http)
+  - [HTTP e TCP](#http-e-tcp)
+  - [HTTP/2 e HTTP/3](#http2-e-http3)
+  - [Cookies e Estado](#cookies-e-estado)
+  - [Proxy e Cache](#proxy-e-cache)
+
+- [Módulo DNS](#módulo-dns)
+  - [Conceitos Fundamentais do DNS](#conceitos-fundamentais-do-dns)
+  - [Por que não Centralizar o DNS?](#por-que-não-centralizar-o-dns)
+  - [Serviços DNS](#serviços-dns)
+  - [Hierarquia do DNS](#hierarquia-do-dns)
+  - [Operação do DNS](#operação-do-dns)
+  - [Segurança no DNS](#segurança-no-dns)
+  - [Ferramentas de Cliente DNS](#ferramentas-de-cliente-dns)
+  - [Recordes de Recursos DNS](#recordes-de-recursos-dns)
+  - [Implementação e Gestão de Domínios](#implementação-e-gestão-de-domínios)
+  - [Programação e Integração com DNS](#programação-e-integração-com-dns)
+
+- [Módulo Segurança de Redes](#módulo-segurança-de-redes)
+  - [Tipos de Ataques](#tipos-de-ataques)
+  - [Propriedades de Comunicação Segura](#propriedades-de-comunicação-segura)
+  - [Criptografia](#criptografia)
+  - [Criptografia de Chave Pública](#criptografia-de-chave-pública)
+  - [Infraestrutura de Chaves Públicas (PKI)](#infraestrutura-de-chaves-públicas-pki)
+  - [TLS (Transport Layer Security)](#tls-transport-layer-security)
+
+- [Módulo Encaminhamento](#módulo-encaminhamento)
+  - [Conceitos Fundamentais](#conceitos-fundamentais)
+  - [Algoritmos de Encaminhamento Dinâmico](#algoritmos-de-encaminhamento-dinâmico)
+  - [Protocolos de Encaminhamento IP](#protocolos-de-encaminhamento-ip)
+  - [Encaminhamento IP em Detalhe](#encaminhamento-ip-em-detalhe)
+  - [Algoritmos de Encaminhamento](#algoritmos-de-encaminhamento)
+  - [Problemas e Soluções nos Algoritmos DV](#problemas-e-soluções-nos-algoritmos-dv)
+  - [Encaminhamento na Internet](#encaminhamento-na-internet)
+
+
 
 # Módulo Transporte
 
